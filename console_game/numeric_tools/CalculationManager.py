@@ -1,7 +1,7 @@
 import json
 from CalculationTemplate import CalculationTemplate
-from common import FilenameUtil
-from common import JsonUtil
+from console_game.common import FilenameUtil
+from console_game.common import JsonUtil
 
 JSON_TEMPLATES_ROOT = "templates"
 JSON_NAME = "name"
