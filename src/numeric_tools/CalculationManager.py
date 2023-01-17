@@ -39,7 +39,7 @@ class CalculationManager:
                     baseObj = objMap.get(baseName)
                     if not baseObj:
                         raise ValueError("模板 %s 依赖的模板 %s 不存在" % (currName, baseName))
-                    template = self.createTemplateByObjAndFillMap(objMap, baseObj)
+                    template = self.createTemplateByObjAndFillMap(objMap, baseName)
                 baseTemplates.append(template)
         ruleExpr = currObj.get(JSON_RULE_EXPRESSION)
         # 填入 map 并返回
