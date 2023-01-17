@@ -10,6 +10,8 @@ SYMBOL_PRIORITY = {
 }
 
 def convertToPostfixExpr(infixExpr : str) -> list:
+    if not infixExpr:
+        return []
     result = []
     operStack = []
     word = ""

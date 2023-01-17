@@ -1,0 +1,35 @@
+{
+    "templates": [
+        {
+            "name": "STR"
+        },
+        {
+            "name": "MAG"
+        },
+        {
+            "name": "CON"
+        },
+        {
+            "name": "SPD"
+        },
+        {
+            "name": "DEX"
+        },
+        {
+            "name": "HP",
+            "baseTemplates": [
+                "CON"
+            ],
+            "ruleExpression": "CON*2+5000"
+        },
+        {
+            "name": "SP",
+            "baseTemplates": [
+                "CON",
+                "STR",
+                "MAG"
+            ],
+            "ruleExpression": "CON+STR*0.2+MAG*0.2"
+        }
+    ]
+}
